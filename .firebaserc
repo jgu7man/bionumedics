@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bionumedics-4526a": {
+      "hosting": {
+        "bionumedics": [
+          "bionumedics-4526a"
+        ]
+      }
+    }
+  }
+}
