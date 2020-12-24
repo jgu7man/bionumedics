@@ -7,3 +7,9 @@
 [submodule "src/app/gdev-tools"]
 	path = src/app/gdev-tools
 	url = https://github.com/jgu7man/gdev-tools
+[submodule "src/app/gdev-store"]
+	path = src/app/gdev-store
+	url = https://github.com/jgu7man/gdev-store-module
+[submodule "src/app/gdev-panel"]
+	path = src/app/gdev-panel
+	url = https://github.com/jgu7man/gdev-panel
