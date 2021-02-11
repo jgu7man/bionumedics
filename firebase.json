@@ -1,31 +1,30 @@
 {
-  "hosting": [
-    {
-      "target": "bionumedics",
-      "public": "dist/bionumedics",
-      "ignore": [
-        "**/.*"
-      ],
-      "headers": [
-        {
-          "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "public,max-age=31536000,immutable"
-            }
-          ]
-        }
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    }
-  ],
   "functions": {
+    "source": "functions",
     "predeploy": "npm --prefix \"$RESOURCE_DIR\" run build"
+  },
+  "hosting": {
+    "target": "bionumedics",
+    "public": "dist/bionumedics",
+    "ignore": [
+      "**/.*"
+    ],
+    "headers": [
+      {
+        "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=31536000,immutable"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }

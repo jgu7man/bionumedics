@@ -1,14 +1,14 @@
 {
   "targets": {
-    "bionumedics-4526a": {
+    "bionumedics-1e0b2": {
       "hosting": {
         "bionumedics": [
-          "bionumedics-4526a"
+          "bionumedics-1e0b2"
         ]
       }
     }
   },
   "projects": {
-    "default": "bionumedics-4526a"
+    "default": "bionumedics-1e0b2"
   }
 }
