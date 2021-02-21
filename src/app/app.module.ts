@@ -13,10 +13,12 @@ import { GdevStorePublicModule } from './gdev-store/public/gdev-store-public.mod
 import { FirebaseModule } from './firebase.module';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './gdev-tools/material.module';
+import { InicioComponent } from './gdev-site/pages/inicio/inicio.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { MaterialModule } from './gdev-tools/material.module';
     GdevPanelModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [InicioComponent]
 })
 export class AppModule { }

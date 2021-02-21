@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ExtraOptions } from '@angular/router';
+import { InicioComponent } from './gdev-site/pages/inicio/inicio.component';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'tienda' },
+  // { path: '', pathMatch: 'full', redirectTo: '' },
+  {path: '', component: InicioComponent },
   {
-    path: 'tienda', 
+    path: 'tienda',
     loadChildren: () =>
       import( './gdev-store/public/gdev-store-public.module' )
         .then( m => m.GdevStorePublicModule )
   },
   {
-    path: 'panel', 
+    path: 'panel',
     loadChildren: () =>
       import( './gdev-panel/gdev-panel.module' )
         .then( m => m.GdevPanelModule )
