@@ -13,3 +13,6 @@
 [submodule "src/app/gdev-panel"]
 	path = src/app/gdev-panel
 	url = https://github.com/jgu7man/gdev-panel
+[submodule "src/app/prodlist-readr-module"]
+	path = src/app/prodlist-readr-module
+	url = https://github.com/jgu7man/prodlist-readr-module
