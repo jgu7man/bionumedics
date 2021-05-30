@@ -4,8 +4,6 @@ import { InicioComponent } from './gdev-site/pages/inicio/inicio.component';
 
 
 const routes: Routes = [
-  // { path: '', pathMatch: 'full', redirectTo: '' },
-  {path: '', component: InicioComponent },
   {
     path: 'tienda',
     loadChildren: () =>
@@ -17,6 +15,11 @@ const routes: Routes = [
     loadChildren: () =>
       import( './gdev-panel/gdev-panel.module' )
         .then( m => m.GdevPanelModule )
+  },
+  {
+    path: '',
+    loadChildren: () => import('./gdev-site/gdev-site.module')
+      .then(m => m.GdevSiteModule)
   },
 ];
 

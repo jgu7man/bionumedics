@@ -1,0 +1,25 @@
+<mat-toolbar id="topbar" class="mat-elevation-z3">
+  <span class="logo-container">
+    <img [src]="logoImage" [alt]="">
+  </span>
+  <span class="spacer"></span>
+  <ng-container *ngIf="!larger; else desktop">
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </ng-container>
+  <ng-template #desktop >
+    <div class="menu-collection">
+      <a href="#" class="menu-item" [routerLink]="['/']" routerLinkActive="active">
+        Inicio
+      </a>
+      <a href="#" class="menu-item" [routerLink]="['/tienda']" routerLinkActive="active">
+        Tienda
+      </a>
+      <a href="#" class="menu-item" [routerLink]="['/contacto']" routerLinkActive="active">
+        Contacto
+      </a>
+    </div>
+
+  </ng-template>
+</mat-toolbar>

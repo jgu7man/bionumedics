@@ -1,0 +1,32 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+#topbar {
+  position: relative;
+  z-index: 100;
+}
+
+.logo-container {
+  position: relative;
+  height:40px;
+  img {
+    height: 100%;
+  }
+}
+
+.menu-collection {
+  display: flex;
+  justify-content: space-between;
+  min-width: 33%;
+}
+.menu-item {
+  color: #dc288b;
+  font-family: 'Nunito';
+  font-weight: 600;
+}
+
+.menu-item.active{
+  color: #202020;
+  border-bottom: 3px solid #dc288b;
+}

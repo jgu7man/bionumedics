@@ -1,0 +1,64 @@
+#site-footer {
+  width:100vw;
+  background: #761f87;
+  .logo-column {
+    padding: 5em !important;
+    .logo-container {
+      img {
+        width:100%
+      }
+    }
+  }
+}
+
+.collection {
+  width: 80%;
+  border: none !important;
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+    width: 100% !important;
+    justify-content: center
+  }
+  .collection-item {
+      background: transparent;
+      color: #fff !important;
+      border: none !important;
+      @media only screen and (max-width: 767px) {
+        flex-direction: column !important;
+        font-size: 1.5em;
+        line-height: 1.5;
+       }
+  }
+}
+
+
+.collection-item:hover {
+  i {
+    transform: scale(1.5) rotate(45deg);
+  }
+  p{
+    position: relative;
+    left: 1em;
+  }
+}
+
+p, .fas, .fab {
+  transition: ease-out all .4s;
+  color: #fff;
+}
+
+.collection {
+  overflow: visible;
+}
+
+.collection-item {
+  display: flex !important;
+  align-items: center;
+  transition: ease-out all .4s !important;
+  background: transparent !important;
+  overflow: visible;
+  p {
+      margin: 0;
+      margin-left: .5em;
+  }
+}

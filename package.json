@@ -24,6 +24,7 @@
     "@angular/platform-browser-dynamic": "~9.1.13",
     "@angular/router": "~9.1.13",
     "@angular/service-worker": "~9.1.13",
+    "@marxa/devkit": "0.0.6",
     "@marxa/storage": "0.0.18",
     "@marxa/storage-v9": "0.0.2",
     "@types/jquery": "^3.5.5",

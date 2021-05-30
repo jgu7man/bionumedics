@@ -15,6 +15,7 @@ export class AppComponent {
   ) {
     this._admin.getBrandInfo().subscribe(info => {
       if (info && info.iconLogo) {
+        console.log( info )
         let link: HTMLLinkElement = this.doc.createElement('link');
         link.setAttribute('rel', 'icon');
         link.setAttribute('type', 'image/x-icon');
