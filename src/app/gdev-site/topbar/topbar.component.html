@@ -4,9 +4,15 @@
   </span>
   <span class="spacer"></span>
   <ng-container *ngIf="!larger; else desktop">
-    <button mat-icon-button>
+    <button mat-icon-button [matMenuTriggerFor]="siteMenu">
       <mat-icon>menu</mat-icon>
     </button>
+    <mat-menu #siteMenu="matMenu">
+      <button mat-menu-item [routerLink]="['/']">Inicio</button>
+      <button mat-menu-item [routerLink]="['/tienda']">Tienda</button>
+      <button mat-menu-item [routerLink]="['/tienda/login']">Ingresar</button>
+      <button mat-menu-item [routerLink]="['/']">Contacto</button>
+    </mat-menu>
   </ng-container>
   <ng-template #desktop >
     <div class="menu-collection">
@@ -15,6 +21,9 @@
       </a>
       <a href="#" class="menu-item" [routerLink]="['/tienda']" routerLinkActive="active">
         Tienda
+      </a>
+      <a href="#" class="menu-item" [routerLink]="['/tienda/login']" routerLinkActive="active">
+        Ingresar
       </a>
       <a href="#" class="menu-item" [routerLink]="['/contacto']" routerLinkActive="active">
         Contacto
